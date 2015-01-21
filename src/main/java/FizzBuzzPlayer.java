@@ -4,8 +4,5 @@
  *
  * @author twer, @date 1/21/15 7:19 AM
  */
-public class Library {
-    public boolean someLibraryMethod() {
-        return true;
-    }
+public class FizzBuzzPlayer {
 }
