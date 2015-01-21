@@ -45,5 +45,6 @@ public class FizzBuzzPlayerTest {
     @Test
     public void the_player_should_say_fizzbuzz_if_the_number_is_both_a_multiple_of_3_and_a_multiple_of_5() {
         assertEquals("fizzbuzz", fizzBuzzPlayer.say(15));
+        assertEquals("fizzbuzz", fizzBuzzPlayer.say(90));
     }
 }
