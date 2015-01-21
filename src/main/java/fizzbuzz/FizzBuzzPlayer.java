@@ -5,6 +5,6 @@ package fizzbuzz;
  */
 public class FizzBuzzPlayer {
     public String say(int i) {
-        return "1";
+        return String.valueOf(i);
     }
 }
