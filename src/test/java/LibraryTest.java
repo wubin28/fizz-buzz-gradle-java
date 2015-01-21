@@ -12,4 +12,9 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+
+    // TODO: the player should say the number if the number is normal
+    // TODO: the player should say fizz if the number is a multiple of 3 but not a multiple of 15
+    // TODO: the player should say buzz if the number is a multiple of 5 but not a multiple of 15
+    // TODO: the player should say fizzbuzz if the number is both a multiple of 3 and a multiple of 5
 }
