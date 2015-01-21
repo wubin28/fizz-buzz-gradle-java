@@ -42,4 +42,8 @@ public class FizzBuzzPlayerTest {
     }
 
     // TODO: the player should say fizzbuzz if the number is both a multiple of 3 and a multiple of 5 (15, 30, 45, 60, 75, 90)
+    @Test
+    public void the_player_should_say_fizzbuzz_if_the_number_is_both_a_multiple_of_3_and_a_multiple_of_5() {
+        assertEquals("fizzbuzz", fizzBuzzPlayer.say(15));
+    }
 }
