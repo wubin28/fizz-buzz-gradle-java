@@ -22,6 +22,7 @@ public class FizzBuzzPlayerTest {
 
     @Test
     public void the_player_should_say_the_number_if_the_number_is_normal() {
+        fizzBuzzPlayer.setStrategy(new NormalNumberStrategy());
         assertEquals("1", fizzBuzzPlayer.say(1));
         assertEquals("98", fizzBuzzPlayer.say(98));
     }
