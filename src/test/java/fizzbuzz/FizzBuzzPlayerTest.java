@@ -29,6 +29,7 @@ public class FizzBuzzPlayerTest {
 
     @Test
     public void the_player_should_say_fizz_if_the_number_is_a_multiple_of_3_but_not_a_multiple_of_15() {
+        fizzBuzzPlayer.setStrategy(new MultipleOf15Strategy());
         assertEquals("fizz", fizzBuzzPlayer.say(3));
         assertEquals("fizz", fizzBuzzPlayer.say(99));
     }
