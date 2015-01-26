@@ -36,12 +36,14 @@ public class FizzBuzzPlayerTest {
 
     @Test
     public void the_player_should_say_buzz_if_the_number_is_a_multiple_of_5_but_not_a_multiple_of_15() {
+        fizzBuzzPlayer.setStrategy(new MultipleOf5Strategy());
         assertEquals("buzz", fizzBuzzPlayer.say(5));
         assertEquals("buzz", fizzBuzzPlayer.say(100));
     }
 
     @Test
     public void the_player_should_say_fizzbuzz_if_the_number_is_both_a_multiple_of_3_and_a_multiple_of_5() {
+        fizzBuzzPlayer.setStrategy(new MultipleOf3And5Strategy());
         assertEquals("fizzbuzz", fizzBuzzPlayer.say(15));
         assertEquals("fizzbuzz", fizzBuzzPlayer.say(90));
     }
